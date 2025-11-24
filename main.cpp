@@ -1,4 +1,24 @@
-#include "Discretemath.cpp"
+#include <iostream>
+#include <string>
+#include <cmath>
+
+// Include all headers from the HeaderFiles folder
+#include "HeaderFiles/Constants.h"
+#include "HeaderFiles/Student.h"
+#include "HeaderFiles/Course.h"
+#include "HeaderFiles/Faculty.h"
+#include "HeaderFiles/Room.h"
+#include "HeaderFiles/CourseScheduler.h"
+#include "HeaderFiles/GroupManager.h"
+#include "HeaderFiles/InductionVerifier.h"
+#include "HeaderFiles/LogicEngine.h"
+#include "HeaderFiles/SetOperations.h"
+#include "HeaderFiles/RelationsManager.h"
+#include "HeaderFiles/FunctionsManager.h"
+#include "HeaderFiles/ProofVerifier.h"
+#include "HeaderFiles/ConsistencyChecker.h"
+
+using namespace std;
 
 // Global Data Storage
 Student studentList[MAX_STUDENTS];
@@ -27,7 +47,8 @@ ConsistencyChecker consistencyChecker;
 // Utility Functions
 void clearScreen()
 {
-    cout << "\n\n";
+    // Uses generic newlines for portability instead of system("cls")
+    cout << "\n\n\n\n\n\n\n\n\n\n"; 
 }
 
 void pauseScreen()
